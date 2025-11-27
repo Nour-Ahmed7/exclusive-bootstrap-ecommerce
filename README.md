@@ -7,6 +7,8 @@ Inspired by a **Figma design**, featuring:
 - Flash sales section
 - Sign-up form
 
+**Note:** This is a design-only project. No JavaScript functionality or backend logic is included.
+
 ## Technologies Used:
 - HTML5
 - CSS3
