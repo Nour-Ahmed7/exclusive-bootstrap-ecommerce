@@ -1,0 +1,277 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-control::placeholder {
+    font-size: 13px;
+    color: #aaaaaa;
+    border-radius: 20px;
+}
+
+.main-row {
+    height: 400px;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.sidebar {
+    width: 250px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1rem;
+    position: relative;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.sidebar::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: -10px;
+    width: 1px;
+    background: #bab8b8;
+    border-radius: 2px;
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 0.45rem 0;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Indicators style */
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #545353;
+    margin: 0 5px;
+}
+
+/* product cards */
+.card {
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* image inside product cards */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.headline {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #292929;
+}
+
+.category-card {
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #fa5b5b;
+    color: white;
+}
+
+.category-card i {
+    color: #333;
+}
+
+#best-sales {
+    height: fit-content;
+}
+
+#username {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#password {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* ----------- Feature -------------*/
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.feature i {
+  font-size: 40px;
+  margin-bottom: 12px; 
+  color: #c93434;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+
+/* ----- Footer Styling ----- */
+footer {
+  background-color: #000 !important;
+  margin-top: 30px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Titles */
+footer h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs + links */
+footer p,
+footer a {
+  font-size: 14px;
+  color: #bbb !important;
+  margin-bottom: 6px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff !important;
+}
+
+/* Subscribe input */
+footer input.form-control {
+  background: #000000;
+  border: 1px solid #c4c4c4;
+  color: #fff;
+}
+
+footer input.form-control::placeholder {
+  color: #777;
+}
+
+footer .btn-danger {
+  background: #db4444;
+  border: none;
+}
+
+/* QR Code */
+footer .app-buttons img[alt="QR Code"],
+footer img[alt="QR Code"] {
+  border-radius: 6px;
+  padding: 2px;
+  background: #fff;
+}
+
+/* Google Play + App Store */
+footer .app-buttons img:not([alt="QR Code"]) {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer .app-buttons img:not([alt="QR Code"]):hover {
+  transform: scale(1.05);
+}
+
+/* Social icons */
+footer .social-icons a i {
+  font-size: 18px;
+  color: #bbb;
+  transition: color 0.3s ease, transform 0.4s ease !important;
+}
+
+footer .social-icons a:hover {
+  color: #c94d4d !important;
+  transform: translateY(-3px) !important;
+}
+
+/* Bottom text */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-bottom small {
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletter-form .d-flex {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .app-buttons .btn-outline-light {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+    .main-row {
+        flex-direction: column;
+        height: auto;
+    }
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+    .sidebar::after {
+        display: none;
+    }
+}
